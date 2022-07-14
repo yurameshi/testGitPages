@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+
+  <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+  <link rel="stylesheet" href="./../styles/acesso.css">
+  <link rel="stylesheet" href="./../dist/sweetalert2.min.css">
+
+
+</head>
+
+<body>
+
+  <div class="left">
+    <img src="./../assets/pessoa-signup.png" alt="">
+  </div>
+  <div class="right">
+    <form>
+      <div class="form-header">
+        <p>To-Do App</p>
+      </div>
+
+      <label>
+        Nome:
+      </label>
+      <input id="firstName" type="text" minlength="2" required>
+      <small>nome invalido</small>
+      <label>
+        Sobrenome:
+      </label>
+      <input id="lastName" type="text" minlength="2" required>
+      <small>sobrenome invalido</small>
+      <label>
+        Email:
+      </label>
+      <input id="email" type="email" required>
+      <small>email invalido</small>
+      <label>
+        Senha:
+      </label>
+      <input id="password" type="password" minlength="8" required>
+      <small>senha invalido</small>
+      <label>
+        Confirmar Senha:
+      </label>
+      <input id="passwordConfirm" type="password" minlength="8" required>
+      <small>senha invalido</small>
+
+      <button type="submit">Criar conta</button>
+
+    </form>
+    <div class="ingressar">
+      <a href="./../index.html">Já possui conta? Acesse aqui</a>
+    </div>
+  </div>
+  <script src="./../src/sign-up.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
